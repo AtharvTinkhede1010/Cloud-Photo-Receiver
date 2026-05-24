@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Take Photo Button -->
+            <Button
+                android:id="@+id/btnTakePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📸 Take Photo"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white" />
+
+            <!-- Record Video Button -->
+            <Button
+                android:id="@+id/btnRecordVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎥 Record Video"
+                android:textSize="18sp"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@android:color/white" />
+
+            <!-- Upload Status -->
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status: Waiting..."
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="24dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="#DDDDDD" />
+
+            <!-- Server Settings Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Server URL:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editServerUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="http://192.168.1.x:8000/upload"
+                android:inputType="textUri"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnTestServer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test Connection"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/purple_200"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txtServerStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status: Not Tested"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

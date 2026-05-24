@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/serverLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Server URL:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editServerUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="http://192.168.1.x:8000/upload"
+        android:inputType="textUri"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnTestServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Connection"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/txtServerStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Not Tested"
+        android:layout_marginTop="4dp"
+        android:textStyle="italic" />
+
+</LinearLayout>
