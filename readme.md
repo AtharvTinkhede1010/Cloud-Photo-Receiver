@@ -9,8 +9,8 @@ This project solves a common real-world problem:
 
 How can we instantly transfer captured photos/videos from a mobile device to a computer without USB cables, manual copying, or cloud storage?
 
-<img width="576" height="1280" alt="Mobileapp" src="https://github.com/user-attachments/assets/8eeb4282-a03e-4c8c-9acf-e890295cfae7" />
-<img width="1887" height="561" alt="desktop application" src="https://github.com/user-attachments/assets/e14e8526-9047-4fd0-9a3c-4d756d9fc6f5" />
+<img width="192" height="427" alt="Mobileapp" src="https://github.com/user-attachments/assets/8eeb4282-a03e-4c8c-9acf-e890295cfae7" />
+<img width="629" height="187" alt="desktop application" src="https://github.com/user-attachments/assets/e14e8526-9047-4fd0-9a3c-4d756d9fc6f5" />
 
 
 Normally users:
